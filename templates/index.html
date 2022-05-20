@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Classification with NLP</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(48, 46, 46);
+            background-color: rgba(224, 217, 217, 0.863);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+        }
+        hr{
+            width: 80%;
+        }
+        h2{
+            font-size: 20px;
+        }
+        .contact-items{
+            display: flex;
+            margin: 30px auto;
+            flex-wrap: wrap;
+            align-items: center;
+
+        }
+        .customer-care,.write-us,.sales-market{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 28%;
+            margin: 30px auto;
+            padding: 35px 15px;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 250px;
+            
+        }
+        .customer-care{
+            height: 250px;
+            box-shadow: 0 15px 15px green;
+            border: 1px solid green;
+        }
+        .write-us{
+            height: 250px;
+            box-shadow: 0 15px 15px red;
+            border: 1px solid red;
+        }
+        .sales-market{
+            height: 250px;
+            box-shadow: 0 15px 15px blue;
+            border: 1px solid blue;
+        }
+        p{
+            font-size: 15px;
+        }
+        button{
+            padding: 8px 16px;
+            font-size: 17px;
+            border-radius: 25px;
+            border: none;
+            margin: 15px auto;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+        button:hover{
+            color: gray;
+        }
+        #cust-care{
+            background: green;
+
+            box-shadow: 0 0 5px black;
+        }
+        #write{
+            background: rgb(187, 15, 15);
+
+            box-shadow: 0 0 5px black;
+        }
+        #sales{
+            background: blue;
+            box-shadow: 0 0 5px black;
+        }
+        a{
+            font-size: 16px;
+        }
+        .customer-care a{
+            color: green;
+            text-shadow: 0 0 2px rgba(73, 129, 80, 0.637);
+        }
+        .sales-market a{
+            color: blue;
+            text-shadow: 0 0 2px rgba(76, 62, 158, 0.637);
+        }
+
+
+            footer {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        background-color: #45a1ff;
+        color: #fff;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>News Classification with NLP</h1>
+        <hr>
+        <h2>Most in the media monitoring sector are familiar with the idea that extracting insights from
+            unstructured texts can be an incredibly tedious job. Luckily, text classification software can simplify
+            the job for human analysts, saving them valuable time, and leading to more accurate results overall.</h2>
+        <div class="contact-items">
+            <div class="customer-care">
+                <h3>Objective</h3>
+                <p>News Classification dataset consist of News articles of class "world", "sports", "business", and "Science"
+
+Given a Title and description we have to determine wheatear it belongs to which news article category .</p>
+                <button id="cust-care"> Objective</button>
+            </div>
+            <div class="write-us">
+                <h3>Classify News Articles</h3>
+                <p> Manual text classification often results in human error from distraction, fatigue,
+                    or inconsistent criteria. Our machine learning model eliminates potential for this error, and creates a
+                    centralized and accurate way to categorize texts.
+                </p>
+               <a href="/newsClassifier"> <button id="write">classifier</button></a>
+            </div>
+            <div class="sales-market">
+                <h3> What Is Text Classification?</h3>
+                <p>Text classification also known as text tagging or text categorization is the process of categorizing text into organized groups. By using Natural Language Processing (NLP), text classifiers can automatically analyze text and then assign a set of pre-defined tags or categories based on its content.</p>
+                <button id="sales">Read more</button>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>@2022 | Designed by @er_vishuu_vi__jaya | vishvanathmetkari2000@gmail.com</p>
+    </footer>
+
+</body>
+</html>
